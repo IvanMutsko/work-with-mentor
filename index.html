@@ -4,28 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Britlex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a href="./index.html">Britlex</a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contacts</a></li>
+      <a href="./index.html" class="logo"> Brit<span class="part-logo">lex</span></a>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="item"><a href="./index.html" class="link">Home</a></li>
+          <li class="item"><a href="#" class="link">Skills</a></li>
+          <li class="item"><a href="#" class="link">About Us</a></li>
+          <li class="item"><a href="#" class="link">Pricing</a></li>
+          <li class="item"><a href="#" class="link">Contacts</a></li>
         </ul>
       </nav>
-      <button type="button">Let’s Talk</button>
+      <button type="button" class="header-btn">Let’s Talk</button>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <div>
-          <h1>Learn Any Foreign Language</h1>
-          <img src="./images/bulb-icon.svg" alt="bulb" width="44" />
-          <p>
+          <h1 class="title">Learn Any Foreign Language</h1>
+          <img src="./images/bulb-icon.svg" alt="bulb" width="85" />
+          <p class="text">
             With our teachers who write a program for each student, you will be able to make your
             first sketch after the first lesson.
           </p>
@@ -35,44 +49,44 @@
           <img src="./images/learning-languages.png" alt="learning languages" width="654" />
         </div>
       </section>
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>
+      <section class="skills">
+        <h2 class="title">Skills</h2>
+        <ul class="skills-list">
+          <li class="item">
             <img src="./images/Shared.png" alt="Shared" width="390" />
-            <h3>Speaking</h3>
-            <p>
+            <h3 class="title">Speaking</h3>
+            <p class="text">
               Improve your English skills and confidence. Live classes and interactive lessons
               online. 20% extra free for a limited time only
             </p>
-            <p>
+            <p class="text">
               Learn English online and improve your skills through our high-quality courses and
               resources – all designed for adult language learners.
             </p>
             <button type="button">Learn more</button>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/Typewriter.png" alt="Typewriter" width="390" />
-            <h3>Writing</h3>
-            <p>
+            <h3 class="title">Writing</h3>
+            <p class="text">
               One of the most important and extensive areas of natural science, the science that
               studies substances, also their composition
             </p>
             <button type="button">Learn more</button>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/House.png" alt="House" width="390" />
-            <h3>Reading</h3>
-            <p>
+            <h3 class="title">Reading</h3>
+            <p class="text">
               Perception and response actions of the user resulting from the use and/or upcoming use
               of the product, system or service
             </p>
             <button type="button">Learn more</button>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/Podcast.png" alt="Podcast" width="409" />
-            <h3>Listening</h3>
-            <p>
+            <h3 class="title">Listening</h3>
+            <p class="text">
               Here you can find activities to practise your listening skills. Listening will help
               you to improve your understanding
             </p>
@@ -80,61 +94,61 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h1>About Us</h1>
-        <p>
+      <section class="about">
+        <h2 class="title">About Us</h2>
+        <p class="text">
           The model offers a framework for discussing problems related to the user's experience, as
           well as possible ways and means of solving them. Application development begins at the top
           level (strategy), where the future software product is described quite abstractly from the
           point of view of the expectations of both users and the customer.
         </p>
-        <ul>
-          <li>
-            <p>800</p>
-            <p>Pupils</p>
+        <ul class="quantity">
+          <li class="quantity-list">
+            <p class="numeric">800</p>
+            <p class="caption">Pupils</p>
           </li>
-          <li>
-            <p>18</p>
-            <p>Teachers</p>
+          <li class="quantity-list">
+            <p class="numeric">18</p>
+            <p class="caption">Teachers</p>
           </li>
-          <li>
-            <p>6</p>
-            <p>Foreign languages</p>
+          <li class="quantity-list">
+            <p class="numeric">6</p>
+            <p class="caption">Foreign languages</p>
           </li>
         </ul>
         <img src="./images/Business.png" alt="Business" width="540" />
       </section>
-      <section>
-        <h2>Pricing</h2>
-        <ul>
-          <li>
+      <section class="pricing">
+        <h2 class="title">Pricing</h2>
+        <ul class="pricing-list">
+          <li class="item">
             <img src="./images/online.png" alt="study online" width="426" />
-            <h3>Self-study online course</h3>
+            <h3 class="title">Self-study online course</h3>
             <p>
               Start learning English online in live classes with qualified EC teachers and students
               from all over the world.
             </p>
-            <div>
-              <span>£5.99</span>
-              <span>per month</span>
+            <div class="wrap">
+              <span class="cost">£5.99</span>
+              <span class="period">per month</span>
             </div>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/lesson.png" alt="study in classroom" width="426" />
-            <h3>Live online classes</h3>
+            <h3 class="title">Live online classes</h3>
             <p>Interactive group classes with expert teachers. Free 7-day trial</p>
-            <div>
-              <span>£12.99</span>
-              <span>per month</span>
+            <div class="wrap">
+              <span class="cost">£12.99</span>
+              <span class="period">per month</span>
             </div>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/webinar.png" alt="webinar" width="426" />
-            <h3>Personal Tuition</h3>
+            <h3 class="title">Personal Tuition</h3>
             <p>Online one-to-one English tutoring – enjoy our first session for only $1</p>
-            <div>
-              <span>£12.99</span>
-              <span>per month</span>
+            <div class="wrap">
+              <span class="cost">£12.99</span>
+              <span class="period">per month</span>
             </div>
           </li>
         </ul>
