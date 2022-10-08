@@ -42,11 +42,26 @@ button:hover,
 button:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+.container {
+  width: 1338px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* _____________Header_____________ */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
 
 .logo {
   color: var(--main-title-color);
   font-size: 36px;
+  display: inline-block;
 
   text-decoration: none;
 }
@@ -55,11 +70,20 @@ button:focus {
   color: var(--logo-second-color);
 }
 
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-left: 236px;
+  gap: 50px;
+}
+
 .nav-list .link {
   font-weight: 500;
 
   color: var(--button-background-color);
   text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-btn {
@@ -70,9 +94,22 @@ button:focus {
   background-color: transparent;
   border: 2px solid var(--button-background-color);
   border-radius: 10px;
+
+  margin-left: auto;
+  padding: 20px 56px;
+  min-width: 312px;
 }
 
 /* _____________Hero_____________ */
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-part {
+  width: 540px;
+}
 
 .hero .title {
   font-weight: 600;
@@ -83,8 +120,17 @@ button:focus {
   max-width: 386px;
 }
 
+.title-img {
+  display: flex;
+}
+
 .hero .text {
   font-size: 24px;
+}
+
+.hero-btn {
+  min-width: 426px;
+  padding: 23px 64px;
 }
 
 /* _____________Skills_____________ */
@@ -169,4 +215,26 @@ button:focus {
   border-radius: 5px;
 }
 
-/* доробити контакти та футер */
+/* _____________Contact Us_____________ */
+
+.contact .title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--main-title-color);
+}
+
+.form-mail {
+  min-width: 425px;
+  color: inherit;
+  border: 1px solid var(--main-text-color);
+  border-radius: 10px;
+}
+
+/* _____________Footer_____________ */
+
+.aside {
+  font-size: 24px;
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+}
